@@ -8,6 +8,7 @@ import { Hello } from './components/Hello';
 import { Clock } from './components/Clock';
 import { Toggle } from './components/Toggle';
 import { LoginControl } from './components/LoginControl';
+import { Game } from './components/Game';
 
 import './custom.css'
 
@@ -23,7 +24,8 @@ export default class App extends Component {
         <Route path='/hello' component={Hello} />
         <Route path='/clock' component={Clock} />
         <Route path='/toggle' component={Toggle} />
-        <Route path='/login' component={LoginControl} />
+        <Route path='/game' component={Game} />
+        <Route path='/login' component={LoginControl} />        
       </Layout>
     );
   }
