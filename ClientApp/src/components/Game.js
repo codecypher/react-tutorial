@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './Game.css';
+import '../css/Game.css';
 
 function Square(props) {
     return (
