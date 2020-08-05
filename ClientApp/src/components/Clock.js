@@ -7,11 +7,11 @@
  * Using State Correctly
  *
  * There are three things you need to know about setState():
- * 
+ *
  * 1. Do Not Modify State Directly, use setState().
- * 
+ *
  * 2. State Updates May Be Asynchronous
- * 
+ *
  *    This means that this.props and this.state may be updated asynchronously,
  *    so you should not rely on their values for calculating the next state.
  *
@@ -23,6 +23,8 @@ import ReactDOM from 'react-dom';
 
 export class Clock extends React.Component {
     constructor(props) {
+        // Note how we pass props to the base constructor.
+        // Class components should always call the base constructor with props.
         super(props);
         this.state = { date: new Date() };
     }
@@ -44,7 +46,7 @@ export class Clock extends React.Component {
     // We implement a method that the component will run every second.
     // It uses this.setState() to schedule updates to the component local state.
     tick() {
-        // React knows the state has changed, and calls the render() method 
+        // React knows the state has changed, and calls the render() method
         // to learn what should be on the screen. Now this.state.date in the
         // render() method will be different, and so the render output will
         // include the updated time. React updates the DOM accordingly.
