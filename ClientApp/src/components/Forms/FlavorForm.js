@@ -1,10 +1,10 @@
 /*
  * Forms
- * https://reactjs.org/docs/forms.html
  * The select Tag
  * In HTML, <select> creates a drop-down list.
  * Instead of using the selected attribute, React uses a value attribute on the root select tag.
  * This is more convenient in a controlled component because you only need to update it in one place.
+ * https://reactjs.org/docs/forms.html
  */
 
 import ReactDOM from "react-dom";

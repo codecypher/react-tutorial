@@ -1,11 +1,11 @@
 /*
  * Forms
- * https://reactjs.org/docs/forms.html
- *  Handling Multiple Inputs
+ * Handling Multiple Inputs
  * When you need to handle multiple controlled input elements,
  * you can add a name attribute to each element and let the
  * handler function choose what to do based on the value of
  * event.target.name.
+ * https://reactjs.org/docs/forms.html
  */
 
 import ReactDOM from "react-dom";

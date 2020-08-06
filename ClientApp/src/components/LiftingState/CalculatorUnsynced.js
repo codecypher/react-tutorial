@@ -41,7 +41,7 @@ class TemperatureInput extends React.Component {
 // We can now change the Calculator to render two separate temperature inputs.
 // In this version, the TemperatureInput components keep their values
 // independently in the local state, but we would like to keep them in sync.
-class CalculatorUnsynced extends React.Component {
+class Calculator extends React.Component {
     render() {
         return (
             <div>

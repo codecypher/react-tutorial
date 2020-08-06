@@ -1,8 +1,8 @@
 /*
  * Forms
- * https://reactjs.org/docs/forms.html
- *  HTML form elements work a little bit differently from other DOM elements in React
+ * HTML form elements work a little bit differently from other DOM elements in React
  * because form elements naturally keep some internal state.
+ * https://reactjs.org/docs/forms.html
  */
 
 import ReactDOM from "react-dom";
