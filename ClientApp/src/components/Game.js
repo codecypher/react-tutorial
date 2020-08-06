@@ -1,3 +1,7 @@
+/**
+ * Game.js
+ * author: Raul Barrera Jr.
+ */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../css/Game.css';
@@ -9,17 +13,17 @@ function Square(props) {
       </button>
     )
   }
-  
+
   class Board extends React.Component {
     renderSquare(i) {
       return (
-        <Square 
-          value={this.props.squares[i]} 
-          onClick={() => this.props.onClick(i)}  
+        <Square
+          value={this.props.squares[i]}
+          onClick={() => this.props.onClick(i)}
         />
       );
     }
-  
+
     render() {
       return (
         <div>
@@ -42,9 +46,9 @@ function Square(props) {
       );
     }
   }
-  
+
   export class Game extends React.Component {
-    
+
     constructor(props) {
       super(props);
       this.state = {
@@ -83,7 +87,7 @@ function Square(props) {
         xIsNext: (step % 2) === 0,
       });
     }
-    
+
     render() {
       const history = this.state.history;
       const current = history[this.state.stepNumber];
@@ -106,11 +110,11 @@ function Square(props) {
       } else {
         status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
       }
-      
+
       return (
         <div className="game">
           <div className="game-board">
-            <Board 
+            <Board
               squares={current.squares}
               onClick={i => this.handleClick(i)}
             />
@@ -124,10 +128,8 @@ function Square(props) {
     }
 
   }
-  
+
   // ========================================
-  
-  ReactDOM.render(<Game />,document.getElementById('root'));
 
   function calculateWinner(squares) {
     const lines = [
@@ -139,7 +141,7 @@ function Square(props) {
       [2, 5, 8],
       [0, 4, 8],
       [2, 4, 6],
-      
+
     ];
 
     for (let i = 0; i <lines.length; i++ ){
@@ -150,4 +152,8 @@ function Square(props) {
     }
     return null;
   }
-  
+
+ReactDOM.render(
+    <Game />,
+    document.getElementById('root')
+);

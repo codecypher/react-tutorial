@@ -36,16 +36,12 @@ export class Toggle extends React.Component {
     // <button onClick={(e) => this.deleteRow(id, e)}>Delete Row</button>
 
     render() {
-        const numbers = [1, 2, 3, 4, 5];
         return (
             <div>
                 Toggle:
                 <button onClick={this.handleClick}>
                     {this.state.isToggleOn ? 'ON' : 'OFF'}
                 </button>
-                <div>
-                    List: <NumberList numbers={numbers} />
-                </div>
             </div>
         );
     }
