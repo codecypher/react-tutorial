@@ -7,7 +7,8 @@
 
 import React, { useState, useEffect } from 'react';
 
-// This component uses an effect to subscribe to a friend’s online status, and cleans up by unsubscribing from it.
+// This component uses an effect to subscribe to a friend’s online status,
+// and cleans up by unsubscribing from it.
 // Just like with useState, you can use more than a single effect in a component.
 function FriendStatus(props) {
     const [count, setCount] = useState(0);

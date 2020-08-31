@@ -22,4 +22,3 @@ ReactDOM.render(
   rootElement);
 
 registerServiceWorker();
-

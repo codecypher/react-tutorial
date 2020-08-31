@@ -233,4 +233,10 @@ _Pvt_Extensions
 # FAKE - F# Make
 .fake/
 
-
+# Make changes here
+.idea
+appsettings.*.json
+**/*/.env
+**/*/.env.*
+package-lock.json
+yarn-error.log
